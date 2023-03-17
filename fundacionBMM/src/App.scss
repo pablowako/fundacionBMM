@@ -1,1 +1,5 @@
-@import './variables/_reset';
+@import './variables/reset', './variables/root';
+
+body{
+    background: var(--c-white);
+}

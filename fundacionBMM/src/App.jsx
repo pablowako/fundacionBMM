@@ -1,16 +1,25 @@
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
-import { Link } from "react-router-dom";
+import {
+    BrowserRouter,
+    Route,
+    Routes,
+} from "react-router-dom";
+import Book from "./pages/Book/Book";
+
 
 function App() {
     return (
-            <div className="App">
+        <div className="App">
+            <BrowserRouter>
                 <Header />
-                <Home />
-                <div className="test">test</div>
-                <Link to="/test">test</Link>
-            </div>
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/book" element={<Book />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
     );
 }
 

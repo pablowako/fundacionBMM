@@ -1,0 +1,39 @@
+.header{
+    background-color: var(--c-blue);
+    color: var(--c-font-white);
+    padding: 1rem;
+    &__wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: auto;
+        // padding: 1rem 0 0 0 ;
+    }
+    &__left{
+
+    }
+    &__icon{
+
+    }
+    &__title{
+
+    }
+    &__right{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    &__link{
+        margin-left: .5rem;
+        border-radius: .1rem;
+        padding: .5rem 1rem;
+        &.active{
+            background: white;
+            color: var(--c-blue);
+        }
+    }
+}
