@@ -1,13 +1,14 @@
 .header{
     background-color: var(--c-blue);
     color: var(--c-font-white);
-    padding: 1rem;
     &__wrapper{
+        padding: 1rem;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        max-width: 1000px;
+        max-width: var(--w-main-maxwidth);
+        width: var(--w-main-width);
         margin: auto;
         // padding: 1rem 0 0 0 ;
     }

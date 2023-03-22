@@ -3,3 +3,10 @@
 body{
     background: var(--c-white);
 }
+
+.main{
+    max-width: var(--w-main-maxwidth);
+    width: var(--w-main-width);
+    margin: auto;
+    padding: 1rem;
+}
