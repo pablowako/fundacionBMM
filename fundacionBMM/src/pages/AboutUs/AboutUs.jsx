@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-const Book = () => {
+const AboutUs = () => {
     return <>
-    This is book
+    This is AboutUs
     </>;
 };
 
-export default Book
+export default AboutUs
