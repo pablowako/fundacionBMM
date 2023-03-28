@@ -1,9 +1,21 @@
 .home {
     &__hero {
+        margin:3rem 0;
         &--img {
+            max-width: 15rem;
+            width: 100%;
+            margin: auto;
         }
         &--text {
-            .bold {
+            text-transform: uppercase;
+            color: var(--c-blue);
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: var(--f-pretty);
+            font-weight: 300;
+            font-optical-sizing: none;
+            &.bold {
+                font-weight: 600;
             }
         }
     }
@@ -11,9 +23,30 @@
     }
 }
 .section {
+    background-color: var(--c-lightblue);
+    &:nth-child(2n){
+        background-color: var(--c-white);
+        .section__main{
+            flex-flow: row-reverse nowrap;
+        }
+
+    }
+    &__wrapper{
+        max-width: var(--w-main-maxwidth);
+        width: var(--w-main-width);
+        margin: auto;
+        padding: 1rem;
+    }
     &__title {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: var(--c-blue);
+        font-weight: 600;
     }
     &__main {
+        display: flex;
+        flex-flow: row nowrap;
+
     }
     &__img {
     }

@@ -24,6 +24,12 @@ const Header = () => {
                     </NavLink>
                 </div>
             </div>
+            <div className="notifs">
+                <div className="notifs__wrapper">
+                    <div className="notifs__text">Próximo Evento: EVENTO 1</div>
+                    <a href="/" className="notifs__button">Más información</a>
+                </div>
+            </div>
         </div>
     );
 };
