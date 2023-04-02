@@ -41,7 +41,7 @@ const Home = () => {
                 </section>
                 <section className="section">
                     <div className="section__wrapper">
-                        <div className="section__title">La fundación</div>
+                        <div className="section__title">Los miembros</div>
                         <div className="section__main">
                             <img
                                 src="/default.png"
@@ -66,7 +66,7 @@ const Home = () => {
                 </section>
                 <section className="section">
                     <div className="section__wrapper">
-                        <div className="section__title">La fundación</div>
+                        <div className="section__title">Nuestros objetivos</div>
                         <div className="section__main">
                             <img
                                 src="/default.png"

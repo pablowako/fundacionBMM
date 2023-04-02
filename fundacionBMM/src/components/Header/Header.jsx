@@ -26,7 +26,7 @@ const Header = () => {
             </div>
             <div className="notifs">
                 <div className="notifs__wrapper">
-                    <div className="notifs__text">Próximo Evento: EVENTO 1</div>
+                    <div className="notifs__text">Próximo Evento: Inauguración de la fundación</div>
                     <a href="/" className="notifs__button">Más información</a>
                 </div>
             </div>
