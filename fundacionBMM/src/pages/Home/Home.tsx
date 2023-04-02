@@ -7,7 +7,7 @@ const Home = () => {
                 <div className="home__hero">
                     <img
                         className="home__hero--img"
-                        src="/src/assets/delfinAzul.png"
+                        src="/delfinAzul.png"
                         alt="Fundación Beatriz Moreno Mendoza"
                     />
                     <div className="home__hero--text">Fundación</div>
@@ -19,7 +19,7 @@ const Home = () => {
                         <div className="section__title">La fundación</div>
                         <div className="section__main">
                             <img
-                                src="/src/assets/default.png"
+                                src="/default.png"
                                 alt="test"
                                 className="section__img"
                             />
@@ -44,7 +44,7 @@ const Home = () => {
                         <div className="section__title">La fundación</div>
                         <div className="section__main">
                             <img
-                                src="/src/assets/default.png"
+                                src="/default.png"
                                 alt="test"
                                 className="section__img"
                             />
@@ -69,7 +69,7 @@ const Home = () => {
                         <div className="section__title">La fundación</div>
                         <div className="section__main">
                             <img
-                                src="/src/assets/default.png"
+                                src="/default.png"
                                 alt="test"
                                 className="section__img"
                             />

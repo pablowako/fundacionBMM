@@ -29,17 +29,21 @@
         .section__main{
             flex-flow: row-reverse nowrap;
         }
+        .section__text{
+            margin-left: 0;
+            margin-right: 2rem;
+        }
 
     }
     &__wrapper{
         max-width: var(--w-main-maxwidth);
         width: var(--w-main-width);
         margin: auto;
-        padding: 1rem;
+        padding: 3rem 1rem;
     }
     &__title {
         margin-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 3rem;
         color: var(--c-blue);
         font-weight: 600;
     }
@@ -51,5 +55,9 @@
     &__img {
     }
     &__text {
+        font-weight: 200;
+        color: var(--c-blue);
+        margin-left: 2rem;
+        font-size: 1.8rem;
     }
 }
