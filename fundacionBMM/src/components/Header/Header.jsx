@@ -22,12 +22,15 @@ const Header = () => {
                     <NavLink to="/contact" className="header__link">
                         Contacto
                     </NavLink>
+                    <NavLink to="/events" className="header__link">
+                        Eventos
+                    </NavLink>
                 </div>
             </div>
             <div className="notifs">
                 <div className="notifs__wrapper">
                     <div className="notifs__text">Próximo Evento: Inauguración de la fundación</div>
-                    <a href="/" className="notifs__button">Más información</a>
+                    <NavLink to="/events" className="notifs__button">Más información</NavLink>
                 </div>
             </div>
         </div>

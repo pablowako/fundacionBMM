@@ -1,0 +1,47 @@
+.events {
+    max-width: var(--w-main-maxwidth);
+    width: var(--w-main-width);
+    margin: auto;
+    &__wrapper {
+        margin: 2rem 1rem;
+    }
+    
+    &__lista {
+
+    }
+    
+    &__title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__event {}
+}
+.event {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    background-color: var(--c-lightblue);
+    &__title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    &__text {
+        line-height: 1.2;
+    }
+}
+
+
+.title {
+    &__text {}
+    
+    &__date {
+        margin-right: .5rem;
+
+    }
+}
