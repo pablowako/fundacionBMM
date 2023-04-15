@@ -2,6 +2,7 @@
     max-width: var(--w-main-maxwidth);
     width: var(--w-main-width);
     margin: auto;
+    color: var(--c-blue);
     &__wrapper {
         margin: 2rem 1rem;
     }
@@ -12,8 +13,10 @@
     
     &__title {
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem;
+        font-family: var(--f-pretty);
+        font-optical-sizing: none;
     }
 
     &__event {}
@@ -22,6 +25,7 @@
     padding: .5rem;
     margin-bottom: 1rem;
     background-color: var(--c-lightblue);
+    color: var(--c-blue);
     &__title {
         font-size: 1.2rem;
         margin-bottom: 1rem;

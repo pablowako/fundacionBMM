@@ -2,8 +2,8 @@
 
 :root{
     --c-negro         : #393939;
-    --tipo-principal   : "Josefin Sans", Arial, sans-serif;
-    --tipo-secundaria  : Verdana;
+    // --f-main   : "Josefin Sans", Arial, sans-serif;
+    // --tipo-secundaria  : Verdana;
   }
     
   @media (prefers-color-scheme: dark) {
@@ -73,8 +73,8 @@
   }
   
   ::selection {
-    background-color: var(--negro);
-    color: var(--blanco);
+    background-color: var(--c-blue);
+    color: var(--c-white);
   }
   
   form , input, textarea, select , button , label{
@@ -101,11 +101,15 @@
   body {
     min-height  : 100vh;
     font-size   : 100%;
-    font-family : var(--tipo-principal);
+    font-family : var(--f-main);
     color       : var(--negro);
     hyphens: auto;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: block;
+  }
+  .grecaptcha-badge{
+    display: none;
+    opacity: 0;
   }

@@ -16,15 +16,39 @@ const Home = () => {
                 </div>
                 <section className="section">
                     <div className="section__wrapper">
-                        <div className="section__title">La fundación</div>
+                        <div className="section__title">Nuestros objetivos</div>
                         <div className="section__main">
                             <img
-                                src="/default.png"
+                                src="/fotosPDF/image-057.jpg"
                                 alt="test"
                                 className="section__img"
                             />
                             <div className="section__text">
-                                Nuestra misión consiste en promover la
+                                La fundación BMM tiene como objetivo promover y
+                                acercar la cultura a sus miembros a través de
+                                diversos eventos socioculturales: desde charlas
+                                filosóficas hasta excursiones culturales al
+                                rededor del arte y la música. Más allá de estos
+                                eventos, nos gustaría, en el futuro, poder
+                                ayudar a los estudiantes más extraordinarios con
+                                una beca universitaria. La beca tendría el
+                                objetivo de impulsar el campo de las artes y
+                                humanidades.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="section">
+                    <div className="section__wrapper">
+                        <div className="section__title">La fundación</div>
+                        <div className="section__main">
+                            <img
+                                src="/fotosPDF/image-020.jpg"
+                                alt="Beatriz"
+                                className="section__img"
+                            />
+                            <div className="section__text">
+                            La misión de la Fundación consiste en promover la
                                 filosofía, la sabiduría, la música y las artes a
                                 través de eventos, seminarios, y “otros”. It has
                                 survived not only five centuries, but also the
@@ -44,47 +68,21 @@ const Home = () => {
                         <div className="section__title">Los miembros</div>
                         <div className="section__main">
                             <img
-                                src="/default.png"
+                                src="/fotosPDF/image-036.jpg"
                                 alt="test"
                                 className="section__img"
                             />
                             <div className="section__text">
-                                Nuestra misión consiste en promover la
-                                filosofía, la sabiduría, la música y las artes a
-                                través de eventos, seminarios, y “otros”. It has
-                                survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining
-                                essentially unchanged. It was popularised in the
-                                1960s with the release of Letraset sheets
-                                containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like
-                                Aldus PageMaker including versions of Lorem
-                                Ipsum.
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section">
-                    <div className="section__wrapper">
-                        <div className="section__title">Nuestros objetivos</div>
-                        <div className="section__main">
-                            <img
-                                src="/default.png"
-                                alt="test"
-                                className="section__img"
-                            />
-                            <div className="section__text">
-                                Nuestra misión consiste en promover la
-                                filosofía, la sabiduría, la música y las artes a
-                                través de eventos, seminarios, y “otros”. It has
-                                survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining
-                                essentially unchanged. It was popularised in the
-                                1960s with the release of Letraset sheets
-                                containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like
-                                Aldus PageMaker including versions of Lorem
-                                Ipsum.
+                            Con la llegada de la pandemia, Fernando se
+                                encuentra con muchas horas libres, y decide
+                                dedicar a expandir su conocimiento de la
+                                filosofía y las artes. Esta nueva pasión le
+                                lleva a organizar eventos con y para sus amigos
+                                en torno a la cultura. A medida que éstos
+                                eventos crecen en tamaño y número, entiende que
+                                tiene que crear una fundación contenedora, y
+                                decide dedicarsela a su hermana Beatriz.
+                                
                             </div>
                         </div>
                     </div>

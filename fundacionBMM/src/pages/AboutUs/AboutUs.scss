@@ -1,0 +1,60 @@
+@import "./../../variables/root";
+
+
+.about {
+    color: var(--c-blue);
+    &__wrapper {
+        max-width: var(--w-main-maxwidth);
+        width: var(--w-main-width);
+        margin: auto;
+        padding: 3rem 1rem;
+
+    }
+    &__section {
+        display: flex;
+        padding: 3rem 0;
+        &:nth-child(2n){
+            flex-direction: row-reverse;
+            .about__body{
+
+                margin-left: .5rem;
+            }
+            .about__text{
+                text-align: right;
+            }
+            .about__title{
+                text-align: right;
+            }
+        }
+    }
+    
+    &__title {
+        
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-family: var(--f-pretty);
+        font-optical-sizing: none;
+        color: var(--c-blue);
+    }
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        max-width: 40%;
+        width: 1000rem;
+        @media screen and (max-width: $wMobile) {
+            max-width: 55%;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        font-weight: 300;
+        hyphens: none;
+    }
+
+
+}

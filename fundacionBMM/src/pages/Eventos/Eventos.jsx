@@ -11,18 +11,16 @@ const Eventos = () => {
                         <div className="events__event event">
                             <div className="event__title">
                                 <div className="title__text">- Inauguración</div>
-                                <div className="title__date">15 Abril 2023</div>
+                                <div className="title__date">19:30, 15 Abril 2023</div>
                             </div>
                             <div className="event__text">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Voluptates voluptatibus cumque
-                                deleniti explicabo, nihil earum illum quis
-                                accusantium fuga dolore, error distinctio
-                                adipisci vel tempora, et corrupti fugiat
-                                exercitationem incidunt.
+                                Evento de Inauguración de la fundación, y presentación del Libro (próximamente a la venta).
+                            </div>
+                            <div className="event__text">
+                                "The White Lab", Paseo de la Castellana, 166
                             </div>
                         </div>
-                        <div className="events__event event">
+                        {/* <div className="events__event event">
                             <div className="event__title">
                                 <div className="title__text">- Evento 2</div>
                                 <div className="title__date">???</div>
@@ -42,7 +40,7 @@ const Eventos = () => {
                                 <div className="title__date">???</div>
                             </div>
                             <div className="event__text"></div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

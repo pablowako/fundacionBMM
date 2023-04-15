@@ -7,6 +7,15 @@
     --c-font-white: #fff;
     --w-main-maxwidth: 1200px;
     --w-main-width: 95vw;
+    --w-mobile: 650px;
     --f-main: "Josefin Sans", Arial, sans-serif;
     --f-pretty: "Bodoni Moda", Times, serif; 
 }
+@media screen and (max-width: 1300px) {
+    :root{
+        --w-main-maxwidth: 1000px;
+        
+    }
+}
+
+$wMobile: 650px

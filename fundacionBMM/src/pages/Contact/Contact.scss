@@ -1,0 +1,63 @@
+.form{
+    max-width: var(--w-main-maxwidth);
+    width: var(--w-main-width);
+    margin: auto;
+    color: var(--c-blue);
+    &__wrapper{
+        margin: 2rem 1rem;
+
+    }
+    &__form{
+        background: var(--c-lightblue);
+        padding: 1rem;
+    }
+    &__input{
+        width: 100%;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        appearance: none;
+        border: none;
+        font-size: 1.5rem;
+        &:focus-visible{
+            border: none;
+            outline: none;
+        }
+    }
+    &__textarea{
+        font-size: 1.5rem;
+        width: 100%;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        &:focus-visible{
+            border: none;
+            outline: none;
+        }
+    }
+    &__button{
+        background: var(--c-white);
+        padding: .5rem;
+        border-radius: .25rem;
+        font-size: 1.5rem;
+    }
+    &__title{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    &__head{
+        
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-family: var(--f-pretty);
+        font-optical-sizing: none;
+        color: var(--c-blue);
+    }
+    &__text{
+
+    }
+    &__email{
+        margin-top: 1rem;
+        display: inline-block;
+        font-weight: 800;
+    }
+}
