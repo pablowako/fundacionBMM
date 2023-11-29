@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.scss";
+import Pending from "../../components/Pending/Pending";
 const Home = () => {
     return (
         <>
@@ -13,6 +14,8 @@ const Home = () => {
                     <div className="home__hero--text">Fundación</div>
                     <div className="home__hero--text bold">Beatriz</div>
                     <div className="home__hero--text bold">Moreno Mendoza</div>
+                        <Pending size={"small"}/>
+
                 </div>
                 <section className="section">
                     <div className="section__wrapper">

@@ -1,0 +1,15 @@
+@import "./../../variables/root";
+
+.text{
+    font-size: .7em;
+}
+.smalltext{
+    font-size: .8em;
+    text-transform: lowercase;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--c-blue);
+}

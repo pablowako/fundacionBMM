@@ -1,7 +1,6 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState } from "react";
 import { send } from "emailjs-com";
 import { GoogleReCaptcha } from "react-google-recaptcha-v3";
-// import Recaptcha from "react-google-invisible-recaptcha";
 import "./Contact.scss";
 
 export const Contact = () => {

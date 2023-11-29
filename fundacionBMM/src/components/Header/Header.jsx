@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import { useState } from "react";
+import Pending from "../Pending/Pending";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ const Header = () => {
                     <div className="header__wrapper">
                         <div className="header__icon"></div>
                         <h2 className="header__title">Fundación Beatriz MM</h2>
+                        <Pending/>
                     </div>
                 </div>
             </div>
@@ -29,6 +31,7 @@ const Header = () => {
                     <NavLink to="/" className="header__left">
                         <div className="header__icon"></div>
                         <h2 className="header__title">Fundación Beatriz MM</h2>
+                        <Pending/>
                     </NavLink>
                     <div className="header__right">
                         <NavLink
