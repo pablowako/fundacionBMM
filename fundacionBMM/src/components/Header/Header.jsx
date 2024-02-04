@@ -91,14 +91,14 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="notifs">
-                    <div className="notifs__wrapper">
+                    <NavLink to="/events" onClick={()=>{setIsMenuOpen(false)}} className="notifs__wrapper">
                         <div className="notifs__text">
                             Próximo Evento: Inauguración de la fundación
                         </div>
-                        <NavLink to="/events" className="notifs__button">
+                        <div className="notifs__button" >
                             Más información
-                        </NavLink>
-                    </div>
+                        </div>
+                    </NavLink>
                 </div>
             </div>
         </>

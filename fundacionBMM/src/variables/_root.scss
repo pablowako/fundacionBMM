@@ -18,4 +18,11 @@
     }
 }
 
-$wMobile: 650px
+$wMobile: 650px;
+
+.wrapper{
+    max-width: var(--w-main-maxwidth);
+    width: var(--w-main-width);
+    margin: auto;
+    padding: 6rem 1rem 3rem;
+}

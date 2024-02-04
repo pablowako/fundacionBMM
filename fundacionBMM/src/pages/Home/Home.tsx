@@ -53,15 +53,7 @@ const Home = () => {
                             <div className="section__text">
                             La misión de la Fundación consiste en promover la
                                 filosofía, la sabiduría, la música y las artes a
-                                través de eventos, seminarios, y “otros”. It has
-                                survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining
-                                essentially unchanged. It was popularised in the
-                                1960s with the release of Letraset sheets
-                                containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like
-                                Aldus PageMaker including versions of Lorem
-                                Ipsum.
+                                través de eventos, seminarios, y “otros”.
                             </div>
                         </div>
                     </div>
