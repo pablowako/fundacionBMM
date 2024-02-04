@@ -26,10 +26,10 @@ const Eventos = () => {
                                             <div className="title__date">{myDate.toLocaleString('es-ES', options)}</div>
                                         </div>
                                         <div className="event__text">
-                                            Evento de Inauguración de la fundación, y presentación del Libro (próximamente a la venta).
+                                            {event.desc}
                                         </div>
                                         <div className="event__text">
-                                            "The White Lab", Paseo de la Castellana, 166
+                                            {event.location}
                                         </div>
                                     </div>
                                 )
