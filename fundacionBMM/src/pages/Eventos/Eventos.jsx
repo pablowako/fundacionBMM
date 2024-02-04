@@ -19,10 +19,11 @@ const Eventos = () => {
                                     hour: "numeric",
                                     minute: "2-digit",
                                   };
+                                const isPast = myDate < new Date() ? true : false
                                 return(
                                     <div className="events__event event">
                                         <div className="event__title">
-                                            <div className="title__text">- {event.title}</div>
+                                            <div className="title__text">{event.title}</div>
                                             <div className="title__date">{myDate.toLocaleString('es-ES', options)}</div>
                                         </div>
                                         <div className="event__text">
