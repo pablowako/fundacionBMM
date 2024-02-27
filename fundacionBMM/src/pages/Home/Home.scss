@@ -4,6 +4,9 @@
 .home {
     &__hero {
         margin-top: 2rem;
+        @media screen and (max-width:$wMobile) {
+            margin-top: 5rem;
+        }
         &--img {
             max-width: 15rem;
             width: 100%;

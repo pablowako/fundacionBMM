@@ -2,9 +2,17 @@ import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import { useState } from "react";
 import Pending from "../Pending/Pending";
+import {events} from '../../assets/events.json'
+
 
 const Header = () => {
+    events.sort((a,b)=> a.date - b.date)
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const futureEvents = events.map((e)=>{
+        return({isPast: new Date(e.date) > new Date(), event: e})
+    })
+    const nextEvent = futureEvents.find((e)=>e.isPast)
+    console.log("nextEvent",nextEvent);
     return (
         <>
             <div
@@ -36,34 +44,16 @@ const Header = () => {
                     <div className="header__right">
                         <NavLink
                             onClick={() => {
-                                setIsMenuOpen(!isMenuOpen);
+                                setIsMenuOpen(false);
                             }}
                             to="/"
                             className="header__link"
                         >
                             Home
                         </NavLink>
-                        {/* <NavLink
-                            onClick={() => {
-                                setIsMenuOpen(!isMenuOpen);
-                            }}
-                            to="/book"
-                            className="header__link"
-                        >
-                            Libro
-                        </NavLink> */}
-                        {/* <NavLink
-                            onClick={() => {
-                                setIsMenuOpen(!isMenuOpen);
-                            }}
-                            to="/none"
-                            className="header__link"
-                        >
-                            Razón Social
-                        </NavLink> */}
                         <NavLink
                             onClick={() => {
-                                setIsMenuOpen(!isMenuOpen);
+                                setIsMenuOpen(false);
                             }}
                             to="/about-us"
                             className="header__link"
@@ -72,7 +62,7 @@ const Header = () => {
                         </NavLink>
                         <NavLink
                             onClick={() => {
-                                setIsMenuOpen(!isMenuOpen);
+                                setIsMenuOpen(false);
                             }}
                             to="/contact"
                             className="header__link"
@@ -81,7 +71,7 @@ const Header = () => {
                         </NavLink>
                         <NavLink
                             onClick={() => {
-                                setIsMenuOpen(!isMenuOpen);
+                                setIsMenuOpen(false);
                             }}
                             to="/events"
                             className="header__link"
@@ -91,14 +81,18 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="notifs">
-                    <div className="notifs__wrapper">
-                        <div className="notifs__text">
-                            Próximo Evento: Inauguración de la fundación
-                        </div>
-                        <NavLink to="/events" className="notifs__button">
-                            Más información
+                    {nextEvent ?
+                        <NavLink to="/events" onClick={()=>{setIsMenuOpen(false)}} className="notifs__wrapper">
+                            <div className="notifs__text">
+                                Próximo Evento: {nextEvent.event.title}
+                            </div>
+                            <div className="notifs__button" >
+                                Más información
+                            </div>
                         </NavLink>
-                    </div>
+                        :
+                        <></>
+                    }
                 </div>
             </div>
         </>

@@ -11,6 +11,11 @@
         left: 0;
         transform: translatex(-100%);
         transition: .2s ease transform;
+        position: fixed;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
 
     }
     &.open{
@@ -24,7 +29,7 @@
         align-items: center;
         max-width: var(--w-main-maxwidth);
         width: var(--w-main-width);
-        margin: auto;
+        // margin: auto;
         // padding: 1rem 0 0 0 ;
         @media screen and (max-width: $wMobile) {
             flex-direction: column;
@@ -32,7 +37,7 @@
     }
     &__left {
         @media screen and (max-width: $wMobile) {
-            margin-bottom: 2rem;
+            // margin-bottom: 2rem;
         }
     }
     &__icon {
@@ -56,6 +61,11 @@
         }
         @media screen and (max-width: $wMobile) {
             font-size: 1.5rem;
+            text-align: center;
+            margin-left: 0;
+            &:before{
+                display: none;
+            }
         }
     }
     &__right {
@@ -65,6 +75,7 @@
         align-items: center;
         @media screen and (max-width: $wMobile) {
             flex-direction: column;
+            margin-top: 3rem;
         }
     }
     &__link {
@@ -88,6 +99,8 @@
         color: var(--c-blue);
         @media screen and (max-width: $wMobile) {
             // display: none;
+            width: 80vw;
+            border-radius: .25rem;
         }
         &__wrapper {
             display: flex;
@@ -98,6 +111,11 @@
             width: var(--w-main-width);
             margin: auto;
             padding: .5rem 1rem;
+            @media screen and (max-width: $wMobile) {
+                // display: none;
+                width: 80vw;
+                border-radius: .25rem;
+            }
         }
         &__text {
         }
@@ -120,14 +138,18 @@
     }
 }
 .burger{
-    padding: 1rem;
-    position: absolute;
     top: 0;
     z-index: 2;
     background: var(--c-blue);
     display: none;
+    position: fixed;
     @media screen and (max-width: $wMobile) {
-        display: block;
+        width: 3.8rem;
+        height: 3.8rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
     }
     &.open{
         .burger__lines{
@@ -156,8 +178,14 @@
 .headermobile{
     display: none;
     color: var(--c-blue);
+    position: fixed;
+    top: 0;
+    pointer-events: none;
+    width: 100vw;
+    background: var(--c-white);
     @media screen and (max-width: $wMobile) {
         display: block;
+        pointer-events: auto;
     }
     .header__title:before{
         color: var(--c-blue);

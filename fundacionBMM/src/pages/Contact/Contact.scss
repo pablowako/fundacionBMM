@@ -1,3 +1,5 @@
+@import "./../../variables/root";
+
 .form{
     max-width: var(--w-main-maxwidth);
     width: var(--w-main-width);
@@ -5,7 +7,9 @@
     color: var(--c-blue);
     &__wrapper{
         margin: 2rem 1rem;
-
+        @media screen and (max-width: $wMobile) {
+            margin: 5rem 1rem 2rem;
+        }
     }
     &__form{
         background: var(--c-lightblue);
