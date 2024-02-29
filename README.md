@@ -21,6 +21,6 @@ Es un plan de diseño simple, que cuenta con las siguientes restricciones:
 
 ## Programación
 
-Test
+
 
 ## Resultado
